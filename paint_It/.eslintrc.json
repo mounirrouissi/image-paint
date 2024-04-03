@@ -1,0 +1,64 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "plugins": ["@typescript-eslint", "react", "react-hooks"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "operator-linebreak": "off",
+    "arrow-parens": "off" ,
+    "brace-style": "off" ,// turn off the rule entirely,
+    "comma-dangle": "off" ,// turn off the rule entirely  
+    "space-before-blocks": "off" ,// turn off the rule entirely
+    "implicit-arrow-linebreak": "off",
+    "semi": "off" ,
+    "import/no-unresolved": 0,
+    "react/jsx-no-bind": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".ts", ".tsx"]
+      }
+    ],
+    "consistent-return": "off",
+    "no-use-before-define": "off",
+    "no-await-in-loop": "off",
+    "no-restricted-syntax": "off",
+    "import/extensions": "off",
+    "react/prop-types": 0,
+    "react/require-default-props": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "for-direction": "off",
+    "getter-return": "off",
+    "no-compare-neg-zero": "off",
+    "no-cond-assign": "off",
+    "no-console": "off",
+    "no-constant-condition": "off",
+    "no-control-regex": "off",
+    "no-debugger": "off",
+    "no-dupe-args": "off",
+    "no-dupe-keys": "off",
+    "no-duplicate-case": "off",
+    "no-empty": "off",
+    "no-empty-character-class": "off",
+    "no-ex-assign": "off"
+  }
+}
