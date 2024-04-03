@@ -134,6 +134,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>impainting-backend</finalName>
 	</build>
 
 </project>
