@@ -1,7 +1,7 @@
 # React/Spring Boot Bookstore Application
 
 ## Overview
-This application is a full-stack web solution for a bookstore. It features a React frontend, Spring Boot backend, and includes advanced functionalities such as image processing, OAuth2 Google authentication, email-based login/signup, user feedback, and Stripe payment integration.
+This application is a full-stack web solution for a bookstore. It features a React frontend, Spring Boot backend, and Integrating ONNX ML models , and includes advanced functionalities such as image processing, OAuth2 Google authentication, email-based login/signup, user feedback, and Stripe payment integration.
 
 ## Features
 - **Image Processing**: Remove objects from images and upscale images by 4x.
@@ -9,7 +9,7 @@ This application is a full-stack web solution for a bookstore. It features a Rea
 - **Email Login/Signup**: Users can also register and sign in using their email addresses.
 - **User Feedback**: Collect and manage user feedback.
 - **Stripe Payment Integration**: Process payments with Stripe for a seamless checkout experience.
-
+- **Load ONNX Models: Utilize ONNX.js to load and run your models within the React application.
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
