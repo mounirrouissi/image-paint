@@ -21,10 +21,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
+/*
 @RestController
-@CrossOrigin
-public class PaymentController {
+@CrossOrigin*/
+/*
+class PaymentController {
 
     @Value("${stripe.secretKey}")
     private String STRIPE_API_KEY;
@@ -99,4 +100,4 @@ public class PaymentController {
             return Customer.create(createParams);
         }
     }
-}
+}*/

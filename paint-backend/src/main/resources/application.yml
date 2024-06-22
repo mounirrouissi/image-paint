@@ -1,9 +1,15 @@
 spring:
+#    datasource:
+#        driver-class-name: org.postgresql.Driver
+#        url: jdbc:postgresql://db:5432/paint
+#        username: postgres
+#        password: postgres
+
     datasource:
-        driver-class-name: org.postgresql.Driver
-        url: jdbc:postgresql://localhost:5432/paint
-        username: postgres
-        password: postgres
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/paint
+      username: postgres
+      password: postgres
 
     jpa:
       defer-datasource-initialization: true
@@ -25,8 +31,8 @@ spring:
         client:
           registration:
             google:
-              clientId: 5014057553-8gm9um6vnli3cle5rgigcdjpdrid14m9.apps.googleusercontent.com
-              clientSecret: tWZKVLxaD_ARWsriiiUFYoIk
+              clientId: ${CLIENT_ID}
+              clientSecret: ${SECRET_KEY}
 #              redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
               redirectUri: "http://localhost:8080/oauth2/callback/google"
               scope:

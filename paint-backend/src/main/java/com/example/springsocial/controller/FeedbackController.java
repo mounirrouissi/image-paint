@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/feedback")
 public class FeedbackController {
@@ -22,6 +24,12 @@ public class FeedbackController {
     public ResponseEntity<Feedback> saveFeedback(@RequestBody Feedback feedback) {
         Feedback savedFeedback = feedbackService.saveFeedback(feedback);
         return new ResponseEntity<>(savedFeedback, HttpStatus.CREATED);
+    }
+
+    @GetMapping
+    public List<Feedback> getAllFeedback() {
+
+        return feedbackService.getAllFeedback();
     }
 
     // Other HTTP methods (GET, PUT, DELETE)

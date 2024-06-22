@@ -1,0 +1,13 @@
+spring:
+#    datasource:
+#        driver-class-name: org.postgresql.Driver
+#        url: jdbc:postgresql://db:5432/paint
+#        username: postgres
+#        password: postgres
+
+    datasource:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://db:5432/paint
+      username: postgres
+      password: postgres
+
