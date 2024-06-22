@@ -71,6 +71,11 @@ function App() {
     };
   }, []);
 
+
+  const handleCloseFeedbackDialog = () => {
+    setShowAbout(false);
+  };
+  
   useClickAway(modalRef, () => {
     setShowAbout(false)
   })
@@ -117,7 +122,13 @@ function App() {
 
 
 
-   { !file &&  <FeedbackButton showAbout={showAbout} setShowAbout={setShowAbout}/>}
+   { !file &&  
+   <FeedbackButton 
+   showAbout={showAbout} 
+   setShowAbout={setShowAbout} 
+   onFeedbackSubmitted={handleCloseFeedbackDialog}
+
+   />}
     {openLoginForm && !auth.authenticated && <LoginComponent/>}
     
 
