@@ -28,7 +28,7 @@ A step by step series of examples that tell you how to get a development environ
 #### Backend Setup
 ```bash
 # Clone the repository
-git clone [your-repo-link]
+git clone [your-repo-link]AIzaSyDH0OcFP-I-GAWrxp4r7S0O9a8oRurKWIc
 # Navigate to the server directory
 cd server
 # Build the project
